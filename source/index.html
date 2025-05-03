@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.3/dist/boxicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="Playstation_Img/logo.png" class="logo" alt="Logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="https://www.playstation.com/pt-br/accessories/dualsense-wireless-controller/">Controles</a></li>
+                    <li><a href="https://www.playstation.com/ps-vr2/">Acessórios de VR</a></li>
+                    <li><a href="https://www.playstation.com/pt-br/accessories/media-remote/">Controles de Mídia</a></li>
+                    <li><a href="https://www.playstation.com/pt-br/accessories/">Outros</a></li>                    
+                </ul> 
+            </nav>
+            <img src="Playstation_Img/menu.png" alt="menu" class="menu-icon"
+            onclick="togglemenu()">
+        </div> 
+        <div class="row">
+            <div class="col-1">
+                <h2>Controles PS5<br>Dualsense 5</h2>
+                <h3>Controle sem fio DualSense®</h3>
+                <p>O controle inovador do PS5, com resposta tátil e efeitos gatilho dinâmicos, disponível em várias cores e estilos.</p>
+                <h4>R$ 450.50</h4>
+                <button onclick="window.open('https://www.playstation.com/pt-br/accessories/dualsense-wireless-controller/', '_blank')">
+                    Saiba mais
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="Playstation_Img/controllers.png" 
+                alt="" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <a href="https://www.playstation.com">
+                        <img src="Playstation_Img/add.png" alt="">
+                        <p><small>Interagir</small></p>
+                    </a>
+                </div>                               
+            </div>
+        </div>
+        <div class="social-links">
+            <box-icon type="logo" name="facebook-square" color="white" size="md"></box-icon>
+            <box-icon type="logo" name="twitter" color="white" size="md"></box-icon>
+            <box-icon type="logo" name="instagram" color="white" size="md"></box-icon>
+          </div>
+          
+    </div>
+      <script>
+        var menuList = document.getElementById("menuList");
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") 
+            {
+                menuList.style.maxHeight = "130px";
+            } else 
+            {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+      </script>
+</body>
+</html>
